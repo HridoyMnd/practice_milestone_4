@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Event Bubble</title>
+    <style>
+        #container {
+            border: 1px solid rebeccapurple;
+            padding: 5px;
+            width: 90%;
+            margin: auto;
+        }
+
+        #list_container {
+            border: 1px solid rebeccapurple;
+        }
+
+        #list_container li {
+            border: 1px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <h2>Hello Bubble</h2>
+        <ol id="list_container">
+            <li id="item-1">Lorem, ipsum.</li>
+            <li id="item-2">Et, veniam.</li>
+            <li id="item-3">Eaque, hic?</li>
+            <li id="item-4">Qui, molestias.</li>
+            <li id="item-5">Sunt, tenetur!</li>
+        </ol>
+    </section>
+
+    <script>
+        // click handler add for list item
+        document.getElementById("item-1")
+            .addEventListener('click', () => {
+                console.log("item clicked")
+            })
+
+        // click handler add for list container
+        document.getElementById("list_container")
+            .addEventListener('click', () => {
+                console.log("list container clicked")
+            })
+
+        // click handler add for main container
+        document.getElementById("container")
+            .addEventListener('click', () => {
+                console.log("container container clicked")
+            })
+    </script>
+</body>
+
+</html>

@@ -28,4 +28,8 @@
 >> online
 >> offline
 
+
+// 
+>> event bubble
+>> propagation
 */
