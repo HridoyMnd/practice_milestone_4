@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice More Event</title>
+    <style>
+        #container {
+            border: 1px solid red;
+            padding: 4px;
+        }
+        #submit_btn{
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <input type="text" id="inp_field" placeholder="Enter your name">
+        <button id="submit_btn">Submit</button>
+    </section>
+    <!-- added javascript code below -->
+    <script>
+        // access input value with submit button
+        function myFunction() {
+            const inpField = document.getElementById("inp_field")
+            console.log(inpField.value)
+            inpField.value = "";
+        }
+
+        const submitBtn = document.getElementById("submit_btn");
+        submitBtn.addEventListener("click", myFunction)
+
+        // access input curent value with typeing
+        function getCurrentValue(event) {
+            console.log(event.target.value);
+        };
+
+        const inpField = document.getElementById("inp_field");
+        inpField.addEventListener("keyup", getCurrentValue);
+
+
+</script>
+</body>
+
+</html>
