@@ -19,7 +19,7 @@
 <body>
     <section id="container">
         <input type="text" id="inp_field" placeholder="Enter your name">
-        <button id="submit_btn">Submit</button>
+        <button disabled id="submit_btn">Submit</button>
     </section>
     <!-- added javascript code below -->
     <script>
@@ -35,11 +35,18 @@
 
         // access input curent value with typeing
         function getCurrentValue(event) {
-            console.log(event.target.value);
+            const inpValue = event.target.value;
+            if(inpValue === "submit"){
+                submitBtn.removeAttribute("disabled");
+            }
+            else{
+                submitBtn.setAttribute("disabled", true)
+            }
         };
 
         const inpField = document.getElementById("inp_field");
         inpField.addEventListener("keyup", getCurrentValue);
+
 
 
 </script>
