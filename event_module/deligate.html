@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Event Deligate</title>
+    <style>
+        #section_container {
+            border: 1px solid rebeccapurple;
+            padding: 5px;
+            width: 90%;
+            margin: auto;
+        }
+
+        #list_container {
+            border: 1px solid rebeccapurple;
+        }
+
+        #list_container li {
+            border: 1px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="section_container">
+        <ol id="list_container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Numquam, inventore aperiam!</li>
+            <li class="item">Quis, quae doloremque!</li>
+            <li class="item">Eaque, cupiditate at.</li>
+            <li class="item">Porro, reprehenderit ratione?</li>
+        </ol>
+
+        <button id="add_new_btn">Add New</button>
+    </section>
+
+    <script>
+        // const items = document.getElementsByClassName("item")
+        // for (const item of items) {
+        //     item.addEventListener("click", (event) => {
+        //         event.target.parentNode.removeChild(event.target)
+        //     })
+        // }
+
+        document.getElementById("list_container")
+        .addEventListener("click", (event) => {
+                event.target.parentNode.removeChild(event.target);
+            })
+
+
+
+        document.getElementById('add_new_btn')
+            .addEventListener("click", () => {
+                const newLi = document.createElement('li');
+                const listContianer = document.getElementById("list_container")
+                newLi.innerText = "brand new li form outside";
+                listContianer.append(newLi)
+            })
+    </script>
+</body>
+
+</html>
