@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deligate Practice2</title>
+    <!-- styles applied here -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #main_container {
+            border: 1px solid rebeccapurple;
+            padding: 5px;
+            width: 90%;
+            margin: auto;
+
+        }
+        #list_container{
+            width: 70%;
+            margin: auto;
+            border: 1px solid red;
+        }
+        #list_container li{
+            border: 1px solid red;
+        }
+        #add_more_btn {
+            padding: 8px 30px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <section id="main_container">
+        <h3>WellCome to Deligate2</h3>
+        <ol id="list_container">
+            <li class="list-item1">Lorem, ipsum.</li>
+            <li class="list-item2">Quaerat, enim.</li>
+            <li class="list-item3">Illo, omnis?</li>
+            <li class="list-item4">Placeat, magni.</li>
+            <li class="list-item5">Fugit, corrupti!</li>
+        </ol>
+        <button id="add_more_btn">Add More</button>
+    </section>
+
+    <!-- javascript logic added here -->
+    <script>
+        document.getElementById("list_container")
+        .addEventListener("click", (event) => {
+            event.target.parentNode.removeChild(event.target)
+        })
+
+        const listContainer = document.getElementById("list_container");
+        document.getElementById("add_more_btn")
+        .addEventListener("click", () => {
+            const newLI = document.createElement("li");
+            newLI.innerText = "New list item create with me";
+            listContainer.append(newLI);
+
+        })
+    </script>
+</body>
+
+</html>
