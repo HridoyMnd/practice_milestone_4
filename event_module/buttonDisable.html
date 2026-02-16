@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Button Active & Deactive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main_container{
+            border: 1px solid greenyellow;
+            padding: 10px;
+            width: 90%;
+            margin: auto;
+        }
+        #sub_btn{
+            padding: 8px 24px;
+        }
+        #inp_field{
+            padding: 5px 20px;
+        }
+    </style>
+</head>
+<body>
+    <section id="main_container">
+        <h2>Active Submit Button</h2>
+        <input type="text" id="inp_field" placeholder="Enter the corrent name">
+        <button disabled id="sub_btn">Submit</button>
+    </section>
+
+    <!-- javascript logic added here -->
+     <script>
+        const subBtn = document.getElementById("sub_btn")
+        const inpField = document.getElementById("inp_field");
+        inpField
+        .addEventListener("keyup", ()=> {
+
+            if(inpField.value === "submit"){
+                subBtn.removeAttribute("disabled")
+            }
+            else{
+                subBtn.setAttribute("disabled", true)
+            }
+        })
+     </script>
+</body>
+</html>
