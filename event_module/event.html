@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Heading With Event</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            #main_container{
+                border: 1px solid red;
+                padding: 10px;
+                text-align: center;
+            }
+            #inp_field{
+                padding: 8px 20px;
+                border-radius: 4px;
+                margin-top: 10px;
+            }
+            #update_btn{
+                padding: 8px 24px;
+            }
+        </style>
+</head>
+<body>
+    <section id="main_container">
+        <h2 id="header">Update Heading</h2>
+        <input type="text" id="inp_field" placeholder="Enter New World">
+        <button id="update_btn">Update World</button>
+    </section>
+
+    <!-- javascript logic added here -->
+     <script>
+        const inpField = document.getElementById("inp_field");
+        const updateBtn = document.getElementById("update_btn");
+        const newHeading = document.getElementById("header");
+        updateBtn.addEventListener('click', () => {
+            newHeading.innerText = inpField.value;
+            inpField.value = '';
+        })
+     </script>
+</body>
+</html>
