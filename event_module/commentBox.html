@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main_container {
+            border: 1px solid goldenrod;
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        #inp_field {
+            padding: 8px 20px;
+            margin-top: 20px;
+        }
+
+        #sub_btn {
+            padding: 8px 24px;
+        }
+
+        #comment_container {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="main_container">
+        <h2>Enter Your Opinion</h2>
+        <input type="text" placeholder="Enter your opinion" id="inp_field">
+        <button id="sub_btn">Submit</button>
+        <div id="comment_container">
+
+        </div>
+    </section>
+    <!-- javascript logic added here-->
+    <script>
+        const inpField = document.getElementById("inp_field");
+        const subBtn = document.getElementById("sub_btn");
+        const commentContainer = document.getElementById("comment_container");
+        subBtn.addEventListener("click", () => {
+            const newPara = document.createElement("p");
+            newPara.style.border = '1px solid red';
+            newPara.innerText = inpField.value;
+            commentContainer.appendChild(newPara);
+            inpField.value = '';
+        })
+    </script>
+</body>
+
+</html>
