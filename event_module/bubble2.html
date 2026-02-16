@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Bubble2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main_container {
+            width: 90%;
+            margin: auto;
+            border: 1px solid red;
+            padding: 10px;
+        }
+        #list_container{
+            border: 1px solid blue;
+            width: 80%;
+            margin: auto;
+            padding: 5px;
+        }
+        #list_container li{
+            border: 1px solid black;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="main_container">
+        <h3>Hello Bubble2</h3>
+        <ol id="list_container">
+            <li id="list_item1">Lorem, ipsum dolor.</li>
+            <li id="list_item2">Eos, quaerat similique.</li>
+            <li id="list_item3">Natus, officia aperiam.</li>
+            <li id="list_item4">Ipsa, laborum vitae.</li>
+            <li id="list_item5">Repudiandae, ullam debitis?</li>
+        </ol>
+    </section>
+    <!-- javascript logic added here -->
+     <script>
+        document.getElementById("main_container")
+        .addEventListener("click", (event)=>{
+            console.log('I am main container and clicked')
+        })
+        document.getElementById("list_item2")
+        .addEventListener("click", (event)=>{
+            console.log(event.target);
+        })
+        document.getElementById("list_container")
+        .addEventListener("click", (event)=>{
+            console.log("I am list container and clicked");
+        })
+     </script>
+</body>
+</html>
