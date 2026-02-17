@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo Mobile Bank</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-gray-900">
-        
+    <section class="main_container w-[30%] mx-auto bg-slate-200 p-4 min-h-screen">
+        <div class=" relative p-2 mt-20">
+            <div class="logo_container flex flex-col items-center justify-center relative">
+                <img src="./images/bg.png" alt="" class="">
+                <img src="./images/Group.png" alt="" class="absolute top-10">
+            </div>
+            <div
+                class="form_container bg-slate-100 rounded-xl p-5 flex flex-col gap-3 absolute w-full top-1/2 left-1/2 -translate-x-1/2">
+                <label class=" font-semibold ml-5" for="number">Mobile Number</label>
+                <input class="bg-slate-200 px-5 py-2 rounded-full outline-none w-11/12 mx-auto" type="number"
+                    placeholder="Enter your number">
+                <label class=" font-semibold ml-5" for="pin number">4 Digit Pin</label>
+                <input class="bg-slate-200 px-5 py-2 rounded-full outline-none w-11/12 mx-auto" type="text"
+                    placeholder="Enter 4 Digit Pin">
+                <button
+                    class="bg-blue-600 w-11/12 mx-auto py-2 rounded-full text-white font-semibold mt-4">Login</button>
+            </div>
+        </div>
+    </section>
     <!-- javascript files will add below -->
-     <script></script>
+    <script></script>
 </body>
+
 </html>
