@@ -14,7 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!-- font awosome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css style -->
     <style>
         * {
@@ -25,7 +27,22 @@
 </head>
 
 <body class="bg-base-200 min-h-screen max-w-md mx-auto">
-    <h2>Hello World</h2>
+    <div class="logo_container pt-32">
+        <img class="mx-auto" src="./images/Logo-full.png" alt="">
+    </div>
+    <div class="form_container mt-12">
+        <div class="card bg-base-200 w-full mx-auto max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+                <fieldset class="fieldset space-y-2">
+                    <label class="label font-semibold text-base text-black">Mobile Number</label>
+                    <input type="email" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter your number" />
+                    <label class="label font-semibold text-base text-black">4 Digit Pin</label>
+                    <input type="password" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter 4 Digit Pin" />
+                    <button class="btn btn-primary rounded-full font-semibold text-lg mt-4 w-11/12 mx-auto">Login</button>
+                </fieldset>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
