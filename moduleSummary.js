@@ -18,4 +18,7 @@
 >> appendChild
 >> append
 
+// payoo mobile bank2
+>> windows.location.replace
+>> windows.location.assign
 */

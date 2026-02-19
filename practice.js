@@ -16,3 +16,6 @@ heading.innerText = "I am added from outside with JS. Don't worry I won't create
 container.appendChild(heading);
 mainContainer.append(container);
 
+document.getElementsByClassName
+document.getElementsByTagName
+document.qu

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +24,6 @@
     </style>
 
 </head>
-
 <body class="bg-base-200 min-h-screen max-w-md mx-auto">
     <div class="logo_container pt-32">
         <img class="mx-auto" src="./images/Logo-full.png" alt="">
@@ -35,14 +33,15 @@
             <div class="card-body">
                 <fieldset class="fieldset space-y-2">
                     <label class="label font-semibold text-base text-black">Mobile Number</label>
-                    <input type="email" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter your number" />
+                    <input id="mobile_number" type="email" value="01010101" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter your number" />
                     <label class="label font-semibold text-base text-black">4 Digit Pin</label>
-                    <input type="password" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter 4 Digit Pin" />
-                    <button class="btn btn-primary rounded-full font-semibold text-lg mt-4 w-11/12 mx-auto">Login</button>
+                    <input id="inp_pin" type="password" maxlength="4" class="input rounded-full outline-none bg-base-300 focus:border-purple-600" placeholder="Enter 4 Digit Pin" />
+                    <button id="login_btn" class="btn btn-primary rounded-full font-semibold text-lg mt-4 w-11/12 mx-auto">Login</button>
                 </fieldset>
             </div>
         </div>
     </div>
+    <!-- javascript file will add here -->
+     <script src="./script.js"></script>
 </body>
-
 </html>
