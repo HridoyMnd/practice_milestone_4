@@ -1,5 +1,4 @@
-document.getElementById("login_btn")
-    .addEventListener("click", () => {
+document.getElementById("login_btn").addEventListener("click", () => {
         const mobileNumber = document.getElementById("mobile_number").value;
         const inpPin = document.getElementById("inp_pin").value;
         if(mobileNumber === "01010101" && inpPin === "1111"){
@@ -10,3 +9,5 @@ document.getElementById("login_btn")
             return
         }
     });
+
+    

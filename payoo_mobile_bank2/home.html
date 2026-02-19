@@ -86,17 +86,17 @@
         <!-- cash out form -->
         <section class="cash_out_section p-2  bg-base-200 mt-5">
             <h2 class="text-2xl font-bold opacity-90">Cash Out</h2>
-            <form action="" class="flex flex-col gap-3 mt-4 bg-slate-50 rounded-lg p-3 shadow-sm">
+            <form  class="flex flex-col gap-3 mt-4 bg-slate-50 rounded-lg p-3 shadow-sm">
                 <label class="font-semibold ml-5 opacity-80" for="select bank">Agent Number</label>
-                <input class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
+                <input id="agent_number" class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
                     placeholder="Enter 11 digit number">
                 <label class="font-semibold ml-5 opacity-80" for="enter amount">Amount</label>
-                <input class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
+                <input id="amount" class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
                     placeholder="Add Amount to withdraw">
                 <label class="font-semibold ml-5 opacity-80" for="pin number">Pin Number</label>
-                <input class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
+                <input id="inp_pin" class="bg-gray-200 border-none px-5 py-3 rounded-full outline-none w-11/12 mx-auto" type="number"
                     placeholder="Enter 4 digit pin number">
-                <button class="bg-primary w-11/12 mx-auto py-3 rounded-full text-white font-semibold text-lg mt-4">
+                <button type="button" id="cashout_btn" class="bg-primary w-11/12 mx-auto py-3 rounded-full text-white font-semibold text-lg mt-4">
                     Withdraw Money
                 </button>
             </form>
@@ -104,7 +104,7 @@
         </section>
     </main>
     <!-- javascript file will add here -->
-    <script src="./script.js"></script>
+    <script src="./casout.js"></script>
 </body>
 
 </html>
